@@ -4,7 +4,7 @@ title = 'Wilderness Downtown'
 theme = 'smol'
 copyright = "Julian Yap"
 # Code Highlight
-pygmentsstyle = "monokai"
+pygmentsStyle = "solarized-light"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
