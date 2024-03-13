@@ -17,3 +17,8 @@ New post:
 ```
 hugo new posts/$(date "+%F-%s").md
 ```
+
+Update submodules (themes):
+```
+git submodule update --remote --recursive
+```

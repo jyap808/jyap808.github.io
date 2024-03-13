@@ -3,11 +3,6 @@ languageCode = 'en-us'
 title = 'Wilderness Downtown'
 theme = 'smol'
 copyright = "Julian Yap"
-# Code Highlight
-pygmentsStyle = "solarized-light"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
 paginate=5 # articles per page
 
 [params]
@@ -52,3 +47,9 @@ weight = 1
 name = "Twitter"
 url = "https://twitter.com/jyap"
 weight = 2 
+
+# Code Highlight
+[markup]
+  [markup.highlight]
+    style = 'catppuccin-latte'
+    tabWidth = 4
