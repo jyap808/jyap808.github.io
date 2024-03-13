@@ -13,3 +13,4 @@
 
 # Hugo specific
 .hugo_build.lock
+public/
