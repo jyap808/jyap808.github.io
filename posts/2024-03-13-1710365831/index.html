@@ -1,0 +1,67 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title>Tweeting images with Golang</title>
+<link rel=stylesheet href=/css/style.css></head><body><header>=========================<br>== <a href=/>Wilderness Downtown</a> ==<br>=========================<div style=float:right></div><br><p><nav><a href=/><b>Start</b></a>.
+<a href=/posts><b>Posts</b></a>.
+<a href=/about><b>About</b></a>.
+<a href=/index.xml><b>RSS</b></a>.</nav></p></header><main><article><h1>Tweeting images with Golang</h1><b><time>2024-03-13 2:37PM</time></b><div><h2 id=introduction>Introduction</h2><p>X (the website formerly known as Twitter) has gone through certain &ldquo;changes&rdquo; in recent years. At some point they introduced the v2 API but the functionality isn&rsquo;t complete.</p><p>The v1 API needs to be used for uploading media and getting the resulting media ID. We then need to use the v2 API to reference the uploaded media ID to finalize the post.</p><h2 id=media-upload>Media upload</h2><p>For the v1 API media upload I utilize this library:
+<a href=https://github.com/drswork/go-twitter/>github.com/drswork/go-twitter/</a></p><p>This is actually a fork of the now archived <a href=https://github.com/dghubble/go-twitter>github.com/dghubble/go-twitter</a> library who unfortunately did not merge <a href=https://github.com/dghubble/go-twitter/pull/148>this PR</a> to add media upload functionality. Side note is that I also had an <a href=https://github.com/dghubble/go-twitter/pull/202>unrelated PR</a> that was never merged :(.</p><h2 id=implementation>Implementation</h2><p>Error handling has been removed for brevity.</p><div class=highlight><pre tabindex=0 style=color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#179299>package</span> main
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#179299>import</span> (
+</span></span><span style=display:flex><span>	<span style=color:#40a02b>&#34;context&#34;</span>
+</span></span><span style=display:flex><span>	<span style=color:#40a02b>&#34;encoding/base64&#34;</span>
+</span></span><span style=display:flex><span>	<span style=color:#40a02b>&#34;log&#34;</span>
+</span></span><span style=display:flex><span>	<span style=color:#40a02b>&#34;os&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#9ca0b0;font-style:italic>// X API v1
+</span></span></span><span style=display:flex><span><span style=color:#9ca0b0;font-style:italic></span>	<span style=color:#40a02b>&#34;github.com/dghubble/oauth1&#34;</span>
+</span></span><span style=display:flex><span>	<span style=color:#40a02b>&#34;github.com/drswork/go-twitter/twitter&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#9ca0b0;font-style:italic>// X API v2
+</span></span></span><span style=display:flex><span><span style=color:#9ca0b0;font-style:italic></span>	<span style=color:#40a02b>&#34;github.com/michimani/gotwi&#34;</span>
+</span></span><span style=display:flex><span>	<span style=color:#40a02b>&#34;github.com/michimani/gotwi/tweet/managetweet&#34;</span>
+</span></span><span style=display:flex><span>	gotwiTypes <span style=color:#40a02b>&#34;github.com/michimani/gotwi/tweet/managetweet/types&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#d20f39>const</span> (
+</span></span><span style=display:flex><span>	OAuthTokenEnvKeyName       = <span style=color:#40a02b>&#34;GOTWI_ACCESS_TOKEN&#34;</span>
+</span></span><span style=display:flex><span>	OAuthTokenSecretEnvKeyName = <span style=color:#40a02b>&#34;GOTWI_ACCESS_TOKEN_SECRET&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#d20f39>func</span> <span style=color:#1e66f5>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#9ca0b0;font-style:italic>// A single pixel PNG image
+</span></span></span><span style=display:flex><span><span style=color:#9ca0b0;font-style:italic></span>	base64Image <span style=color:#04a5e5;font-weight:700>:=</span> <span style=color:#40a02b>&#34;iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAACklEQVR4AWNgAAAAAgABc3UBGAAAAABJRU5ErkJggg==&#34;</span>
+</span></span><span style=display:flex><span>	<span style=color:#9ca0b0;font-style:italic>// Decode to []byte
+</span></span></span><span style=display:flex><span><span style=color:#9ca0b0;font-style:italic></span>	image, _ <span style=color:#04a5e5;font-weight:700>:=</span> base64.StdEncoding.<span style=color:#1e66f5>DecodeString</span>(base64Image)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#1e66f5>postTweetWithMedia</span>(<span style=color:#40a02b>&#34;Tweet text&#34;</span>, image)
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#d20f39>func</span> <span style=color:#1e66f5>postTweetWithMedia</span>(xMsg <span style=color:#d20f39>string</span>, image []<span style=color:#d20f39>byte</span>) {
+</span></span><span style=display:flex><span>	config <span style=color:#04a5e5;font-weight:700>:=</span> oauth1.<span style=color:#1e66f5>NewConfig</span>(os.<span style=color:#1e66f5>Getenv</span>(<span style=color:#40a02b>&#34;GOTWI_API_KEY&#34;</span>), os.<span style=color:#1e66f5>Getenv</span>(<span style=color:#40a02b>&#34;GOTWI_API_KEY_SECRET&#34;</span>))
+</span></span><span style=display:flex><span>	token <span style=color:#04a5e5;font-weight:700>:=</span> oauth1.<span style=color:#1e66f5>NewToken</span>(os.<span style=color:#1e66f5>Getenv</span>(OAuthTokenEnvKeyName), os.<span style=color:#1e66f5>Getenv</span>(OAuthTokenSecretEnvKeyName))
+</span></span><span style=display:flex><span>	httpClient <span style=color:#04a5e5;font-weight:700>:=</span> config.<span style=color:#1e66f5>Client</span>(oauth1.NoContext, token)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#9ca0b0;font-style:italic>// v1 API - Upload media
+</span></span></span><span style=display:flex><span><span style=color:#9ca0b0;font-style:italic></span>	clientV1 <span style=color:#04a5e5;font-weight:700>:=</span> twitter.<span style=color:#1e66f5>NewClient</span>(httpClient)
+</span></span><span style=display:flex><span>	media, _, _ <span style=color:#04a5e5;font-weight:700>:=</span> clientV1.Media.<span style=color:#1e66f5>Upload</span>(image, <span style=color:#40a02b>&#34;tweet_image&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#9ca0b0;font-style:italic>// v2 API - Post Tweet with Media
+</span></span></span><span style=display:flex><span><span style=color:#9ca0b0;font-style:italic></span>	in <span style=color:#04a5e5;font-weight:700>:=</span> <span style=color:#04a5e5;font-weight:700>&amp;</span>gotwi.NewClientInput{
+</span></span><span style=display:flex><span>		AuthenticationMethod: gotwi.AuthenMethodOAuth1UserContext,
+</span></span><span style=display:flex><span>		OAuthToken:           os.<span style=color:#1e66f5>Getenv</span>(OAuthTokenEnvKeyName),
+</span></span><span style=display:flex><span>		OAuthTokenSecret:     os.<span style=color:#1e66f5>Getenv</span>(OAuthTokenSecretEnvKeyName),
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>	clientV2, _ <span style=color:#04a5e5;font-weight:700>:=</span> gotwi.<span style=color:#1e66f5>NewClient</span>(in)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	m <span style=color:#04a5e5;font-weight:700>:=</span> <span style=color:#04a5e5;font-weight:700>&amp;</span>gotwiTypes.CreateInputMedia{MediaIDs: []<span style=color:#d20f39>string</span>{media.MediaIDString}, TaggedUserID: <span style=color:#fe640b>nil</span>}
+</span></span><span style=display:flex><span>	p <span style=color:#04a5e5;font-weight:700>:=</span> <span style=color:#04a5e5;font-weight:700>&amp;</span>gotwiTypes.CreateInput{
+</span></span><span style=display:flex><span>		Text:  gotwi.<span style=color:#1e66f5>String</span>(xMsg),
+</span></span><span style=display:flex><span>		Media: m,
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	output, _ <span style=color:#04a5e5;font-weight:700>:=</span> managetweet.<span style=color:#1e66f5>Create</span>(context.<span style=color:#1e66f5>Background</span>(), clientV2, p)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	log.<span style=color:#1e66f5>Println</span>(<span style=color:#40a02b>&#34;Tweet Output:&#34;</span>, output.Data.ID)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div></div></article></main><aside><div><div><h3>LATEST POSTS</h3></div><div><ul><li><a href=/posts/2024-03-13-1710365831/>Tweeting images with Golang</a></li><li><a href=/posts/2022-07-24-1658648241/>Litecoin (LTC) - MimbleWimble transactions using Regtest network</a></li><li><a href=/posts/2022-05-15-1652658630/>First post</a></li></ul></div></div></aside><footer><p>&copy; 2024 <a href=/><b>Julian Yap</b></a>.
+<a href=https://github.com/jyap808><b>GitHub</b></a>.
+<a href=https://twitter.com/jyap><b>Twitter</b></a>.</p></footer></body></html>
