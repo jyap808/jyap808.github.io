@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://julianyap.com/'
 languageCode = 'en-us'
 title = 'Wilderness Downtown'
 theme = 'smol'
