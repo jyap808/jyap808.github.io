@@ -28,14 +28,19 @@ url = "/posts"
 weight = 1
 
 [[menu.main]]
+name = "Pages"
+url = "/pages"
+weight = 2
+
+[[menu.main]]
 name = "About"
 url = "/about"
-weight = 2
+weight = 3
 
 [[menu.main]]
 name = "RSS"
 url = "/index.xml"
-weight = 3
+weight = 4
 
 # Footer
 [[menu.footer]]
