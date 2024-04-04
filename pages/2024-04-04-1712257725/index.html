@@ -1,0 +1,16 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title>Arch Linux - Surface Book 3</title>
+<link rel=stylesheet href=/css/style.css></head><body><header>=========================<br>== <a href=https://julianyap.com/>Wilderness Downtown</a> ==<br>=========================<div style=float:right></div><br><p><nav><a href=/><b>Start</b></a>.
+<a href=/posts><b>Posts</b></a>.
+<a href=/pages><b>Pages</b></a>.
+<a href=/about><b>About</b></a>.
+<a href=/index.xml><b>RSS</b></a>.</nav></p></header><main><article><h1>Arch Linux - Surface Book 3</h1><b><time>2024-04-04 12:08PM</time></b><div><p>I have installed Arch Linux on a Microsoft Surface Book 3 to use as my &ldquo;focus&rdquo; machine. This page outlines some things I&rsquo;ve had to install and tweak.</p><p>Most everything <a href=https://github.com/linux-surface/linux-surface/wiki/Supported-Devices-and-Features#surface-books-and-surface-laptop-studio>works out of the box</a> except the cameras. Suspend also eats up 20% of the battery life overnight.</p><h3 id=visual-studio-code-hangs-on-launch>Visual Studio Code hangs on launch</h3><p>Had <a href=https://github.com/microsoft/vscode/issues/188397#issuecomment-2033053045>this issue</a>.</p><p>Work around add to ~/.vscode-oss/argv.json</p><pre tabindex=0><code>        &#34;password-store&#34;: &#34;basic&#34;
+</code></pre><h3 id=toshy---mac-key-bindings>Toshy - Mac key bindings</h3><p>Installed <a href=https://github.com/RedBearAK/toshy>Toshy</a> because apparently it works better with Wayland.</p><h3 id=ssh-agent>SSH Agent</h3><p>Add this to ~/.bashrc</p><pre tabindex=0><code># ssh-agent from: https://wiki.archlinux.org/title/SSH_keys#ssh-agent
+if ! pgrep -u &#34;$USER&#34; ssh-agent &gt; /dev/null; then
+    ssh-agent -t 1h &gt; &#34;$XDG_RUNTIME_DIR/ssh-agent.env&#34;
+fi
+if [[ ! -f &#34;$SSH_AUTH_SOCK&#34; ]]; then
+    source &#34;$XDG_RUNTIME_DIR/ssh-agent.env&#34; &gt;/dev/null
+fi
+</code></pre></div></article></main><aside><div><div><h3>LATEST POSTS</h3></div><div><ul><li><a href=/posts/2024-03-13-1710365831/>Tweeting images with Golang</a></li><li><a href=/posts/2022-07-24-1658648241/>Litecoin (LTC) - MimbleWimble transactions using Regtest network</a></li><li><a href=/posts/2022-05-15-1652658630/>First post</a></li></ul></div></div></aside><footer><p>&copy; 2024 <a href=https://julianyap.com/><b>Julian Yap</b></a>.
+<a href=https://github.com/jyap808><b>GitHub</b></a>.
+<a href=https://twitter.com/jyap><b>Twitter</b></a>.</p></footer></body></html>
