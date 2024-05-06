@@ -16,7 +16,12 @@ fi
 </code></pre><p>Enable and start</p><pre tabindex=0><code>sudo systemctl enable avahi-daemon.service
 sudo systemctl start avahi-daemon.service
 </code></pre><p>Enable hostname resolution. Modify line in /etc/nsswitch.conf</p><pre tabindex=0><code>hosts: mymachines mdns4_minimal [NOTFOUND=return] resolve [!UNAVAIL=return] files myhostname dns
-</code></pre><h2 id=unresolved-issues>Unresolved issues</h2><h3 id=i915-000000020-drm-error-link-training-unsuccessful>i915 0000:00:02.0: [drm] <em>ERROR</em> Link Training Unsuccessful</h3><p>dmesg output:</p><pre tabindex=0><code>[  861.301517] i915 0000:00:02.0: [drm] *ERROR* Link Training Unsuccessful
+</code></pre><h3 id=brother-hl-3170cdw-printer>Brother HL-3170CDW printer</h3><p>Install CUPS</p><pre tabindex=0><code>sudo pacman -S cups
+systemctl enable cups.service
+systemctl restart cups.service
+systemctl status cups.service
+</code></pre><p>Install driver</p><pre tabindex=0><code>yay -S brother-hl3170cdw
+</code></pre><p>Add printer via CUPS Administration http://localhost:631/admin</p><h2 id=unresolved-issues>Unresolved issues</h2><h3 id=i915-000000020-drm-error-link-training-unsuccessful>i915 0000:00:02.0: [drm] <em>ERROR</em> Link Training Unsuccessful</h3><p>dmesg output:</p><pre tabindex=0><code>[  861.301517] i915 0000:00:02.0: [drm] *ERROR* Link Training Unsuccessful
 </code></pre><p>Similar to: <a href=https://github.com/NixOS/nixpkgs/issues/36392>https://github.com/NixOS/nixpkgs/issues/36392</a></p><p>Appears to be an issue with the dock and using a USBC to Display Port cable.</p><p>.. Switching from Gnome (Wayland) to Gnome Classic (X11) has resolved some annoying suspend issues.</p><h3 id=suspend-is-inconsistent>Suspend is inconsistent</h3><p>Tracking the issue: <a href=https://github.com/linux-surface/linux-surface/issues/1412>https://github.com/linux-surface/linux-surface/issues/1412</a></p></div></article></main><aside><div><div><h3>LATEST POSTS</h3></div><div><ul><li><a href=/posts/2024-03-13-1710365831/>Tweeting images with Golang</a></li><li><a href=/posts/2022-07-24-1658648241/>Litecoin (LTC) - MimbleWimble transactions using Regtest network</a></li><li><a href=/posts/2022-05-15-1652658630/>First post</a></li></ul></div></div></aside><footer><p>&copy; 2024 <a href=https://julianyap.com/><b>Julian Yap</b></a>.
 <a href=https://github.com/jyap808><b>GitHub</b></a>.
 <a href=https://twitter.com/jyap><b>Twitter</b></a>.</p></footer></body></html>
