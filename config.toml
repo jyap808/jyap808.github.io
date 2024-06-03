@@ -10,17 +10,6 @@ mode="dark" # color-mode → light,dark,toggle or auto
 useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 dateFmt = "2006-01-02 3:04PM"
 
-# Social Tags
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/jyap808"
-
-[[params.social]]
-name = "Twitter"
-icon = "twitter"
-url = "https://twitter.com/jyap"
-
 # Main menu Items
 [[menu.main]]
 name = "Posts"
@@ -49,8 +38,8 @@ url = "https://github.com/jyap808"
 weight = 1 
 
 [[menu.footer]]
-name = "Twitter"
-url = "https://twitter.com/jyap"
+name = "X"
+url = "https://x.com/jyap"
 weight = 2 
 
 # Code Highlight
