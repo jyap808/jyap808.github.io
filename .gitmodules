@@ -1,3 +1,6 @@
 [submodule "themes/smol"]
 	path = themes/smol
 	url = https://github.com/colorchestra/smol
+[submodule "themes/cactus"]
+	path = themes/cactus
+	url = https://github.com/jyap808/hugo-theme-cactus

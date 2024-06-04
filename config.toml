@@ -1,14 +1,32 @@
 baseURL = 'https://julianyap.com/'
 languageCode = 'en-us'
 title = 'Wilderness Downtown'
-theme = 'smol'
+theme = 'cactus'
 copyright = "Julian Yap"
 paginate=5 # articles per page
 
 [params]
-mode="dark" # color-mode → light,dark,toggle or auto
 useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 dateFmt = "2006-01-02 3:04PM"
+# Smol theme
+mode="dark"
+# Cactus theme
+tocInline = true
+tagsOverview = false
+colortheme="dark"
+rss=true # This doesn't seem to work
+
+[[params.social]]
+  name = "github"
+  link = "https://github.com/jyap808"
+
+[[params.social]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/julianyap"
+
+[[params.social]]
+  name = "x-twitter"
+  link = "https://x.com/jyap"
 
 # Main menu Items
 [[menu.main]]
@@ -25,11 +43,6 @@ weight = 2
 name = "About"
 url = "/about"
 weight = 3
-
-[[menu.main]]
-name = "RSS"
-url = "/index.xml"
-weight = 4
 
 # Footer
 [[menu.footer]]
