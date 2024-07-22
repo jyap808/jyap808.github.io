@@ -22,3 +22,12 @@ Update submodules (themes):
 ```
 git submodule update --remote --recursive
 ```
+
+Update theme commit:
+```
+cd themes/${THEME}/
+git fetch
+git checkout ${SUBMODULE COMMIT}
+cd ../
+git commit -am "Update theme"
+```
