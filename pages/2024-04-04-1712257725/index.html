@@ -19,7 +19,7 @@ systemctl enable cups.service
 systemctl restart cups.service
 systemctl status cups.service
 </code></pre><p>Install driver</p><pre tabindex=0><code>yay -S brother-hl3170cdw
-</code></pre><p>Add printer via CUPS Administration http://localhost:631/admin</p><h3 id=other>Other</h3><pre tabindex=0><code>chromium
+</code></pre><p>Add printer via CUPS Administration http://localhost:631/admin</p><h3 id=hibernate>Hibernate</h3><p>I set up a large enough swap partition (equal to RAM size) so that extra set up like setting up a swap file offset isn&rsquo;t necessary.</p><p>The other steps are to configure the initramfs:</p><ul><li>Add &lsquo;resume&rsquo;</li><li>Regenerate initramfs</li></ul><p>Specify the kernel parameter <code>resume=${swap_device}</code>.</p><p>FROM: <a href=https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation>https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation</a></p><h3 id=other>Other</h3><pre tabindex=0><code>chromium
 code
 freetube
 git
