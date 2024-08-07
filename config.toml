@@ -60,3 +60,8 @@ weight = 2
   [markup.highlight]
     style = 'catppuccin-latte'
     tabWidth = 4
+
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
