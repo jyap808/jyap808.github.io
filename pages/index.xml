@@ -8,6 +8,7 @@
  &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
  &lt;li>&lt;a href="#common-issues-and-general-set-up">Common issues and general set up&lt;/a>
  &lt;ul>
+ &lt;li>&lt;a href="#blacklisted-modules">Blacklisted modules&lt;/a>&lt;/li>
  &lt;li>&lt;a href="#visual-studio-code-hangs-on-launch">Visual Studio Code hangs on launch&lt;/a>&lt;/li>
  &lt;li>&lt;a href="#toshy---mac-key-bindings">Toshy - Mac key bindings&lt;/a>&lt;/li>
  &lt;li>&lt;a href="#ssh-agent">SSH Agent&lt;/a>&lt;/li>
@@ -29,8 +30,8 @@
  &lt;/ul>
 &lt;/nav>
 &lt;h2 id="common-issues-and-general-set-up">Common issues and general set up&lt;/h2>
-&lt;h3 id="visual-studio-code-hangs-on-launch">Visual Studio Code hangs on launch&lt;/h3>
-&lt;p>Had &lt;a href="https://github.com/microsoft/vscode/issues/188397#issuecomment-2033053045">this issue&lt;/a>.&lt;/p></description></item><item><title>Bitcoin ETF flow bot - Methodology</title><link>https://julianyap.com/pages/2024-03-13-1710370430/</link><pubDate>Wed, 13 Mar 2024 15:53:50 -0700</pubDate><guid>https://julianyap.com/pages/2024-03-13-1710370430/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;h3 id="blacklisted-modules">Blacklisted modules&lt;/h3>
+&lt;p>I&amp;rsquo;ve had issues with suspending and not resuming on lid closing/opening events. It&amp;rsquo;s a &lt;a href="https://github.com/linux-surface/linux-surface/wiki/Known-Issues-and-FAQ#suspend-aka-sleep-vs-lid-closingopening-events">known issue&lt;/a> so I&amp;rsquo;ve blacklisted &lt;code>surface_gpe&lt;/code> to just turn these events off.&lt;/p></description></item><item><title>Bitcoin ETF flow bot - Methodology</title><link>https://julianyap.com/pages/2024-03-13-1710370430/</link><pubDate>Wed, 13 Mar 2024 15:53:50 -0700</pubDate><guid>https://julianyap.com/pages/2024-03-13-1710370430/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>My Bitcoin ETF flow bot which posts updates at the X account &lt;a href="https://twitter.com/ubiqetfbot">@ubiqetfbot&lt;/a> works by scraping the associated web sites of the ETFs to gather the updated reported Bitcoin holdings in the respective fund/trust.&lt;/p>
 &lt;p>Specific details for each ETF is outlined below (in alphabetical order by Ticker).&lt;/p>
 &lt;h2 id="details">Details&lt;/h2>
