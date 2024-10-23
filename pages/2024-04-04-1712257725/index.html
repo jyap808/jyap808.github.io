@@ -61,7 +61,8 @@ ExecStart=/usr/bin/systemctl restart systemd-timesyncd.service
 WantedBy=suspend.target hibernate.target hybrid-sleep.target suspend-then-hibernate.target
 </code></pre><p>Reload the systemd daemon to recognize the new service:</p><pre tabindex=0><code>sudo systemctl daemon-reload
 </code></pre><p>Enable the new service:</p><pre tabindex=0><code>sudo systemctl enable fix-time-on-resume.service
-</code></pre><p>This service automatically restarts the systemd-timesyncd service when your system resumes from hibernation, which corrects the time.</p><h3 id=other-packages>Other packages</h3><p>Some other packages I install:</p><pre tabindex=0><code>chromium
+</code></pre><p>This service automatically restarts the systemd-timesyncd service when your system resumes from hibernation, which corrects the time.</p><h3 id=other-packages>Other packages</h3><p>Some other packages I install:</p><pre tabindex=0><code>bash-completion
+chromium
 code
 freetube
 git
