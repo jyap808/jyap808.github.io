@@ -19,7 +19,8 @@ fi
 if [[ ! -f &#34;$SSH_AUTH_SOCK&#34; ]]; then
     source &#34;$XDG_RUNTIME_DIR/ssh-agent.env&#34; &gt;/dev/null
 fi
-</code></pre><p>Realized that the timeout is set to 1 hour with the &ldquo;-t 1h&rdquo; flag. I removed this since it was annoying.</p><h3 id=jetbrains-mono-apple-and-microsoft-fonts>Jetbrains Mono, Apple and Microsoft fonts</h3><p>Arch has this</p><pre tabindex=0><code>sudo pacman -S ttf-jetbrains-mono apple-fonts ttf-ms-win11-auto
+</code></pre><p>Realized that the timeout is set to 1 hour with the &ldquo;-t 1h&rdquo; flag. I removed this since it was annoying.</p><h3 id=jetbrains-mono-apple-and-microsoft-fonts>Jetbrains Mono, Apple and Microsoft fonts</h3><pre tabindex=0><code>sudo pacman -S ttf-jetbrains-mono
+yay -S apple-fonts ttf-ms-win11-auto
 </code></pre><p>Set the default for Visual Studio Code: <a href=https://stackoverflow.com/questions/59776906/how-do-i-change-vs-code-settings-to-use-jetbrains-mono-font>https://stackoverflow.com/questions/59776906/how-do-i-change-vs-code-settings-to-use-jetbrains-mono-font</a></p><h3 id=avahi>Avahi</h3><p>Install</p><pre tabindex=0><code>sudo pacman -S avahi nss-mdns
 </code></pre><p>Enable and start</p><pre tabindex=0><code>sudo systemctl enable avahi-daemon.service
 sudo systemctl start avahi-daemon.service
@@ -61,17 +62,8 @@ ExecStart=/usr/bin/systemctl restart systemd-timesyncd.service
 WantedBy=suspend.target hibernate.target hybrid-sleep.target suspend-then-hibernate.target
 </code></pre><p>Reload the systemd daemon to recognize the new service:</p><pre tabindex=0><code>sudo systemctl daemon-reload
 </code></pre><p>Enable the new service:</p><pre tabindex=0><code>sudo systemctl enable fix-time-on-resume.service
-</code></pre><p>This service automatically restarts the systemd-timesyncd service when your system resumes from hibernation, which corrects the time.</p><h3 id=other-packages>Other packages</h3><p>Some other packages I install:</p><pre tabindex=0><code>bash-completion
-chromium
-code
-freetube
-git
-go
-hugo
-jq
-rust
-sudo
-vim
+</code></pre><p>This service automatically restarts the systemd-timesyncd service when your system resumes from hibernation, which corrects the time.</p><h3 id=other-packages>Other packages</h3><p>Some other packages I install:</p><pre tabindex=0><code>sudo pacman -S bash-completion chromium code git go hugo jq rust sudo vim
+</code></pre><pre tabindex=0><code>yay -S freetube
 </code></pre><h2 id=unresolved-issues>Unresolved issues</h2><h3 id=i915-000000020-drm-error-link-training-unsuccessful>i915 0000:00:02.0: [drm] <em>ERROR</em> Link Training Unsuccessful</h3><p>dmesg output:</p><pre tabindex=0><code>[  861.301517] i915 0000:00:02.0: [drm] *ERROR* Link Training Unsuccessful
 </code></pre><p>Similar to: <a href=https://github.com/NixOS/nixpkgs/issues/36392>https://github.com/NixOS/nixpkgs/issues/36392</a></p><p>Appears to be an issue with the dock and using a USBC to Display Port cable.</p><p>Unplugging the power cable (which connects to the dock) seems to help get the external screen displaying again. Annoying workaround.</p><h3 id=suspend>Suspend - Only support Suspend to Idle</h3><p>Suspend only supports <a href=https://www.kernel.org/doc/Documentation/power/states.txt>ACPI state 0 Suspend-To-Idle</a> and eats up 20%+ of the battery life overnight.</p><p>I Hibernate my laptop which writes the state to disk so only uses less than 1% of battery life a day (normal no usage battery trickle).</p><p><a href=https://github.com/linux-surface/linux-surface/issues/1515#issuecomment-2267646335>This link</a> explains why the the laptop only supports suspend to idle:</p><pre tabindex=0><code>Suspend-to-ram, on the other hand, is disabled by the ACPI firmware of the device. I think people have tried to enable it again in some other issue, but that requires patching of the ACPI tables (i.e., not something that we can do from the kernel/software side alone).
 </code></pre></div></article><footer id=footer><div class=footer-left>Copyright &copy; 2024 Julian Yap</div><div class=footer-right><nav><ul><li><a href=/posts>Posts</a></li><li><a href=/pages>Pages</a></li><li><a href=/about>About</a></li></ul></nav></div></footer></div></body><link rel=stylesheet href=/lib/font-awesome/css/all.min.css><script src=/lib/jquery/jquery.min.js></script><script src=/js/main.js></script></html>
