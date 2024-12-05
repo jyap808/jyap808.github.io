@@ -18,6 +18,11 @@ New post:
 hugo new posts/$(date "+%F-%s").md
 ```
 
+Initialize, fetch and checkout nested submodules (themes):
+```
+git submodule update --init --recursive
+```
+
 Update submodules (themes):
 ```
 git submodule update --remote --recursive
