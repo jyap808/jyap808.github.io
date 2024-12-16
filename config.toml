@@ -25,35 +25,38 @@ rss=true # This doesn't seem to work
   link = "https://www.linkedin.com/in/julianyap"
 
 [[params.social]]
+  name = "square-letterboxd"
+  link = "https://letterboxd.com/jyap8"
+
+[[params.social]]
   name = "x-twitter"
   link = "https://x.com/jyap"
 
 # Main menu Items
 [[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
 name = "Posts"
 url = "/posts"
-weight = 1
+weight = 2
 
 [[menu.main]]
 name = "Pages"
 url = "/pages"
-weight = 2
+weight = 3
+
+[[menu.main]]
+name = "Snippets"
+url = "/snippets"
+weight = 4
 
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 3
-
-# Footer
-[[menu.footer]]
-name = "GitHub"
-url = "https://github.com/jyap808"
-weight = 1 
-
-[[menu.footer]]
-name = "X"
-url = "https://x.com/jyap"
-weight = 2 
+weight = 5
 
 # Code Highlight
 [markup]
