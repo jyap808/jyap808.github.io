@@ -55,7 +55,7 @@ The thumb cluster is a great idea but I found I didn't like the 6-key layout. 3 
 
 **Number keys**
 
-I definitely need a dedicated number row with symbols for day to day..
+I definitely need a dedicated number row with symbols for day to day.
 
 **F-key row**
 
@@ -67,7 +67,7 @@ The Cosmos keyboard has a cool and unique feature which allows you to scan your 
 
 **Keycap support**
 
-You can pick different keycap profiles such uniform size DSA keycaps to generate 3D printable files.
+You can pick different keycap profiles such as uniform size DSA keycaps to generate 3D printable files.
 
 ## Iteration 1
 
@@ -75,11 +75,11 @@ My first iteration came out like this:
 
 ![My Cosmos Keyboard Iteration 1](cosmos_iteration1.jpg)
 
-Some of the modifier keys don't align to the label so ignore that. I'll mention my layout later.
+Some of the modifier keys don't align to the label so ignore that. My key layout is discussed further in this post.
 
 This was the basic layout with thumb cluster that I was happy with. Additional keys are accessed with the Function button.
 
-This keyboard uses some spare MT3 profile keycaps that I had bought previously. MT3 is a taller keycap profile that looks nice and pretty but it is more fatiguing, so I am not a fan of using as a daily driver.
+This keyboard uses some spare MT3 profile keycaps that I had bought previously. MT3 is a taller keycap profile that looks nice and pretty but it is more fatiguing, so I am not a fan of using them as a daily driver.
 
 ## My Cosmos
 
@@ -287,21 +287,21 @@ This is my [Layer 1 - generated with Keyboard Layout Editor NG](https://editor.k
 
 ![Layer 1](KLENG-layer1.png)
 
-I mapped the Bottom Left Cluster to key to Ctrl. This allows me to hold down both thumbs to access Ctrl. One downside on Mac is that this 2-thumb key combination doesn't register as a Ctrl/CMD key press if another Layer 1 key is there.
+I mapped the Bottom Left Cluster key to Ctrl. This allows me to hold down both thumbs to access Ctrl. One downside on Mac is that this 2-thumb key combination doesn't register as a CMD key press if another Layer 1 key is there.
 
-For example, I can't use Fn+Ctrl + Number 4. It annoyingly registers as a Fn+4 key press which is F4. It works fine on Linux.
+For example, I can't use Fn+CMD + Number 4. It annoyingly registers as a Fn+4 key press which is F4. It works fine on Linux.
 
 Normally I map CapsLock to Fn+Tab but because CMD+Tab is common on Mac to switch applications, the annoying bug means I need to map CapsLock to Fn+Q.. Which means I can't use CMD+Q with thumb combination.
 
 ## Conclusion
 
-Building your own handwired split ergonomic keywell keyboard is a rewarding experience. You can think of it like building your own custom instrument. There's a sense of satisfaction building something that you can use daily.
+Building your own handwired split ergonomic keywell keyboard is a rewarding experience. You can think of it like building your own custom musical instrument or tool. There's a sense of satisfaction building something that you can use daily that helps your productivity and health.
 
 A columnar ortholinear keyboard is a muscle memory learning curve of around 1 week but it is worth it long term to prevent health issues like RSI or carpal tunnel.
 
 Handwiring a keyboard also saves you money (at the expense of time). Similar off the shelf keyboards like the Kinesis Advantage 2 or Glove 80 are around $400 each.
 
-Some things I would look into for future iterations include:
+Some things I might look into for future iterations include:
 * Changing the TRRS connection for something that does not [short](https://old.reddit.com/r/olkb/comments/18uf6nj/rp2040_split_keyboard_data_line_halfduplex_with/kinff4o/).
 * Building a flat travel version. Perhaps single unit.
 * Designing and making a flat PCB version.
