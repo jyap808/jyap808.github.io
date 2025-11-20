@@ -105,7 +105,7 @@ The print settings I used:
 * 0.15mm layer height for better quality.
 * 3 wall loops.
 * 10% infill using gyroid.
-* Supports enabled. Tree supports, set to 25% threshold angle, 85% first layer density.
+* Supports enabled. Tree supports, set to 25 degree threshold angle (reduced from default 35 degrees), 85% first layer density.
 
 Here it is mid-print on my [Micron (a smaller Voron 2.4) printer](https://github.com/PrintersForAnts/Micron).
 
