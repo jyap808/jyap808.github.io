@@ -162,7 +162,7 @@ Pull up a Pro Micro pinout diagram and annotate it like this:
 
 Firmware files often do not come with a nice wiring diagram so this needs to mapped be out. I do the extra step of mapping out which keys will be ignored since they are not wired up.
 
-Here we look at the `layouts` section of the [keyboard.json](https://github.com/qmk/qmk_firmware/blob/master/keyboards/handwired/dactyl_manuform/5x6/keyboard.json) file. Often this is poorly sorted, which makes it difficult to work out. It can help to use a pencil and paper to map things out.
+Here we look at the `layouts` section of the [keyboard.json](https://github.com/qmk/qmk_firmware/blob/master/keyboards/handwired/dactyl_manuform/5x6/keyboard.json) file. On a split keyboard this is ordered row by row across both splits, which makes it difficult to work out. It can help to use a pencil and paper to map things out.
 
 Here is the annotated and sorted version of my left hand wiring mapping:
 ```
