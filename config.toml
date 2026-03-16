@@ -11,7 +11,6 @@ dateFmt = "2006-01-02 3:04PM"
 # Smol theme
 mode="dark"
 # Cactus theme
-tocInline = true
 tagsOverview = false
 colortheme="dark"
 rss=true # This doesn't seem to work
