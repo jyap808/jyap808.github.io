@@ -21,10 +21,6 @@ rss=true # This doesn't seem to work
   link = "https://github.com/jyap808"
 
 [[params.social]]
-  name = "linkedin"
-  link = "https://www.linkedin.com/in/julianyap"
-
-[[params.social]]
   name = "square-letterboxd"
   link = "https://letterboxd.com/jyap8"
 
@@ -60,6 +56,10 @@ weight = 5
 
 # Code Highlight
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
   [markup.highlight]
     style = 'catppuccin-latte'
     tabWidth = 4
