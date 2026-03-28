@@ -29,7 +29,7 @@ The [official repo](https://github.com/jyap808/pando58) can be found on GitHub, 
 
 The [official documentation](https://jyap808.github.io/pando58/) includes a BOM, build guide, firmware guide, and gallery.
 
-I have made PCB kits available on [my Etsy page](https://www.etsy.com/shop/ReplicantWorks). Purchases help to support the project and encourage further development for further models.
+🚀 Want to build one? Official PCB sets and full DIY kits are available on [Etsy](https://www.etsy.com/listing/4478359437/). Your support helps me keep this project open-source and encourages the development of new models!
 
 ## Background reading
 
