@@ -1,44 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Wilderness Downtown</title><link>https://julianyap.com/pages/</link><description>Recent content in Pages on Wilderness Downtown</description><generator>Hugo</generator><language>en-us</language><copyright>Julian Yap</copyright><lastBuildDate>Thu, 31 Oct 2024 20:04:06 -0700</lastBuildDate><atom:link href="https://julianyap.com/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>Arch Linux - Lenovo ThinkPad T14 Gen 4 (Intel)</title><link>https://julianyap.com/pages/2024-10-31-1730430246/</link><pubDate>Thu, 31 Oct 2024 20:04:06 -0700</pubDate><guid>https://julianyap.com/pages/2024-10-31-1730430246/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>I have installed Arch Linux on a Lenovo ThinkPad T14 Gen 4 (Intel) &amp;ldquo;work&amp;rdquo; machine. This page outlines some setup items and other issues.&lt;/p>
-&lt;h2 id="background">Background&lt;/h2>
-&lt;p>I wanted to get a better laptop for Linux after using it on a poorly supported &lt;a href="./2024-04-04-1712257725.md">Surface Book 3&lt;/a>, which was a former work laptop that I obtained for free.&lt;/p>
-&lt;p>The Lenovo ThinkPad T14 Gen 4 (Intel) didn&amp;rsquo;t have a dedicated Arch Linux page when I bought it (I have since &lt;a href="https://wiki.archlinux.org/title/Lenovo_ThinkPad_T14/T14s_(Intel)_Gen_4">created one&lt;/a>), but it does have &lt;a href="https://ubuntu.com/certified/202303-31392">Ubuntu certification&lt;/a>, and other online reports gave me confidence that there wouldn&amp;rsquo;t be any issues.&lt;/p></description></item><item><title>Arch Linux - Surface Book 3</title><link>https://julianyap.com/pages/2024-04-04-1712257725/</link><pubDate>Thu, 04 Apr 2024 12:08:45 -0700</pubDate><guid>https://julianyap.com/pages/2024-04-04-1712257725/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>I have installed Arch Linux on a Microsoft Surface Book 3 to use as my &amp;ldquo;focus&amp;rdquo; machine. This page outlines some set up items and other issues.&lt;/p>
-&lt;p>Most everything &lt;a href="https://github.com/linux-surface/linux-surface/wiki/Supported-Devices-and-Features#surface-books-and-surface-laptop-studio">works out of the box&lt;/a> except the cameras, which I&amp;rsquo;ve disabled in the BIOS.&lt;/p>
-&lt;p>This laptop does not properly support &amp;ldquo;modern &lt;a href="#suspend">suspend&lt;/a>&amp;rdquo; under Linux.&lt;/p>
-&lt;p>This is &lt;em>not&lt;/em> a recommended laptop for running Linux.&lt;/p>
-&lt;nav id="TableOfContents">
- &lt;ul>
- &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#common-issues-and-general-set-up">Common issues and general set up&lt;/a>
- &lt;ul>
- &lt;li>&lt;a href="#blacklisted-modules">Blacklisted modules&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#visual-studio-code-hangs-on-launch">Visual Studio Code hangs on launch&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#toshy---mac-key-bindings">Toshy - Mac key bindings&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#ssh-agent">SSH Agent&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#jetbrains-mono-apple-and-microsoft-fonts">Jetbrains Mono, Apple and Microsoft fonts&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#avahi">Avahi&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#brother-hl-3170cdw-printer">Brother HL-3170CDW printer&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#hibernate">Hibernate&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#nvidia-gpu">Nvidia GPU&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#resume-from-hibernate-has-the-wrong-time">Resume from Hibernate has the wrong time&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#other-packages">Other packages&lt;/a>&lt;/li>
- &lt;/ul>
- &lt;/li>
- &lt;li>&lt;a href="#unresolved-issues">Unresolved issues&lt;/a>
- &lt;ul>
- &lt;li>&lt;a href="#i915-000000020-drm-error-link-training-unsuccessful">i915 0000:00:02.0: [drm] &lt;em>ERROR&lt;/em> Link Training Unsuccessful&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#suspend">Suspend - Only support Suspend to Idle&lt;/a>&lt;/li>
- &lt;/ul>
- &lt;/li>
- &lt;/ul>
-&lt;/nav>
-&lt;h2 id="common-issues-and-general-set-up">Common issues and general set up&lt;/h2>
-&lt;h3 id="blacklisted-modules">Blacklisted modules&lt;/h3>
-&lt;p>I&amp;rsquo;ve had issues with suspending and not resuming on lid closing/opening events. It&amp;rsquo;s a &lt;a href="https://github.com/linux-surface/linux-surface/wiki/Known-Issues-and-FAQ#suspend-aka-sleep-vs-lid-closingopening-events">known issue&lt;/a> so I&amp;rsquo;ve blacklisted &lt;code>surface_gpe&lt;/code> to just turn these events off.&lt;/p></description></item><item><title>Bitcoin ETF flow bot - Methodology</title><link>https://julianyap.com/pages/2024-03-13-1710370430/</link><pubDate>Wed, 13 Mar 2024 15:53:50 -0700</pubDate><guid>https://julianyap.com/pages/2024-03-13-1710370430/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>My Bitcoin ETF flow bot which posts updates at the X account &lt;a href="https://twitter.com/ubiqetfbot">@ubiqetfbot&lt;/a> works by scraping the associated web sites of the ETFs to gather the updated reported Bitcoin holdings in the respective fund/trust.&lt;/p>
-&lt;p>Specific details for each ETF is outlined below (in alphabetical order by Ticker).&lt;/p>
-&lt;h2 id="details">Details&lt;/h2>
-&lt;h3 id="arkb---ark-21shares-bitcoin-etf">ARKB - ARK 21Shares Bitcoin ETF&lt;/h3>
-&lt;p>Data is from their &lt;a href="https://ark-funds.com/funds/arkb/">fund web site&lt;/a>.&lt;/p>
-&lt;p>Historically, the holdings are updated 10+ hours after the close of trading.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Wilderness Downtown</title><link>https://julianyap.com/pages/</link><description>Recent content in Pages on Wilderness Downtown</description><generator>Hugo</generator><language>en-us</language><copyright>Julian Yap</copyright><lastBuildDate>Thu, 31 Oct 2024 20:04:06 -0700</lastBuildDate><atom:link href="https://julianyap.com/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>Arch Linux - Lenovo ThinkPad T14 Gen 4 (Intel)</title><link>https://julianyap.com/pages/2024-10-31-1730430246/</link><pubDate>Thu, 31 Oct 2024 20:04:06 -0700</pubDate><guid>https://julianyap.com/pages/2024-10-31-1730430246/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I have installed Arch Linux on a Lenovo ThinkPad T14 Gen 4 (Intel) &amp;ldquo;work&amp;rdquo; machine. This page outlines some setup items and other issues.&lt;/p&gt;
+&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;I wanted to get a better laptop for Linux after using it on a poorly supported &lt;a href="./2024-04-04-1712257725.md"&gt;Surface Book 3&lt;/a&gt;, which was a former work laptop that I obtained for free.&lt;/p&gt;
+&lt;p&gt;The Lenovo ThinkPad T14 Gen 4 (Intel) didn&amp;rsquo;t have a dedicated Arch Linux page when I bought it (I have since &lt;a href="https://wiki.archlinux.org/title/Lenovo_ThinkPad_T14/T14s_(Intel)_Gen_4"&gt;created one&lt;/a&gt;), but it does have &lt;a href="https://ubuntu.com/certified/202303-31392"&gt;Ubuntu certification&lt;/a&gt;, and other online reports gave me confidence that there wouldn&amp;rsquo;t be any issues.&lt;/p&gt;</description></item><item><title>Arch Linux - Surface Book 3</title><link>https://julianyap.com/pages/2024-04-04-1712257725/</link><pubDate>Thu, 04 Apr 2024 12:08:45 -0700</pubDate><guid>https://julianyap.com/pages/2024-04-04-1712257725/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I have installed Arch Linux on a Microsoft Surface Book 3 to use as my &amp;ldquo;focus&amp;rdquo; machine. This page outlines some set up items and other issues.&lt;/p&gt;
+&lt;p&gt;Most everything &lt;a href="https://github.com/linux-surface/linux-surface/wiki/Supported-Devices-and-Features#surface-books-and-surface-laptop-studio"&gt;works out of the box&lt;/a&gt; except the cameras, which I&amp;rsquo;ve disabled in the BIOS.&lt;/p&gt;
+&lt;p&gt;This laptop does not properly support &amp;ldquo;modern &lt;a href="#suspend"&gt;suspend&lt;/a&gt;&amp;rdquo; under Linux.&lt;/p&gt;
+&lt;p&gt;This is &lt;em&gt;not&lt;/em&gt; a recommended laptop for running Linux.&lt;/p&gt;
+&lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#common-issues-and-general-set-up"&gt;Common issues and general set up&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#blacklisted-modules"&gt;Blacklisted modules&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#visual-studio-code-hangs-on-launch"&gt;Visual Studio Code hangs on launch&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#toshy---mac-key-bindings"&gt;Toshy - Mac key bindings&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#ssh-agent"&gt;SSH Agent&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#jetbrains-mono-apple-and-microsoft-fonts"&gt;Jetbrains Mono, Apple and Microsoft fonts&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#avahi"&gt;Avahi&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#brother-hl-3170cdw-printer"&gt;Brother HL-3170CDW printer&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#hibernate"&gt;Hibernate&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#nvidia-gpu"&gt;Nvidia GPU&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#resume-from-hibernate-has-the-wrong-time"&gt;Resume from Hibernate has the wrong time&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#other-packages"&gt;Other packages&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#unresolved-issues"&gt;Unresolved issues&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#i915-000000020-drm-error-link-training-unsuccessful"&gt;i915 0000:00:02.0: [drm] &lt;em&gt;ERROR&lt;/em&gt; Link Training Unsuccessful&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#suspend"&gt;Suspend - Only support Suspend to Idle&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id="common-issues-and-general-set-up"&gt;Common issues and general set up&lt;/h2&gt;
+&lt;h3 id="blacklisted-modules"&gt;Blacklisted modules&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve had issues with suspending and not resuming on lid closing/opening events. It&amp;rsquo;s a &lt;a href="https://github.com/linux-surface/linux-surface/wiki/Known-Issues-and-FAQ#suspend-aka-sleep-vs-lid-closingopening-events"&gt;known issue&lt;/a&gt; so I&amp;rsquo;ve blacklisted &lt;code&gt;surface_gpe&lt;/code&gt; to just turn these events off.&lt;/p&gt;</description></item><item><title>Bitcoin ETF flow bot - Methodology</title><link>https://julianyap.com/pages/2024-03-13-1710370430/</link><pubDate>Wed, 13 Mar 2024 15:53:50 -0700</pubDate><guid>https://julianyap.com/pages/2024-03-13-1710370430/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;My Bitcoin ETF flow bot which posts updates at the X account &lt;a href="https://twitter.com/ubiqetfbot"&gt;@ubiqetfbot&lt;/a&gt; works by scraping the associated web sites of the ETFs to gather the updated reported Bitcoin holdings in the respective fund/trust.&lt;/p&gt;
+&lt;p&gt;Specific details for each ETF is outlined below (in alphabetical order by Ticker).&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;h3 id="arkb---ark-21shares-bitcoin-etf"&gt;ARKB - ARK 21Shares Bitcoin ETF&lt;/h3&gt;
+&lt;p&gt;Data is from their &lt;a href="https://ark-funds.com/funds/arkb/"&gt;fund web site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Historically, the holdings are updated 10+ hours after the close of trading.&lt;/p&gt;</description></item></channel></rss>

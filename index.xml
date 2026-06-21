@@ -1,83 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wilderness Downtown</title><link>https://julianyap.com/</link><description>Recent content on Wilderness Downtown</description><generator>Hugo</generator><language>en-us</language><copyright>Julian Yap</copyright><lastBuildDate>Thu, 26 Mar 2026 14:25:00 -0700</lastBuildDate><atom:link href="https://julianyap.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Introducing Pando58 - RP2040 Zero-based Split keyboard</title><link>https://julianyap.com/posts/2026-03-26/</link><pubDate>Thu, 26 Mar 2026 14:25:00 -0700</pubDate><guid>https://julianyap.com/posts/2026-03-26/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;a href="https://github.com/jyap808/pando58">Pando58&lt;/a> is a modern RP2040 Zero-based 58-key column staggered split keyboard. The PCB supports hotswap sockets OR soldered switches. The interconnect uses RJ45 ports as opposed to TRRS, which improves reliability and allows for hotplugging.&lt;/p>
-&lt;p>Pando58 is designed to be &lt;strong>simple to build&lt;/strong> and &lt;strong>robust in daily use&lt;/strong>.&lt;/p>
-&lt;p>It features:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Layout:&lt;/strong> Split, column staggered, ergonomic, 58 keys total&lt;/li>
-&lt;li>&lt;strong>Split connection:&lt;/strong> RJ45&lt;/li>
-&lt;li>&lt;strong>MCU:&lt;/strong> 2x RP2040 Zero (one per half)&lt;/li>
-&lt;li>&lt;strong>Firmware:&lt;/strong> Vial&lt;/li>
-&lt;/ul>
-&lt;p>Pando58 is intended to avoid unnecessary complexity and common failure points found in many split keyboards. It eschews features such as wireless connectivity, LEDs, encoders, and OLED displays.&lt;/p></description></item><item><title>Klipper - Upgrade firmware on Octopus Pro MCU and LDO Nitehawk-36 toolboard</title><link>https://julianyap.com/snippets/2026-02-25-1772062509/</link><pubDate>Wed, 25 Feb 2026 15:35:09 -0800</pubDate><guid>https://julianyap.com/snippets/2026-02-25-1772062509/</guid><description>&lt;p>The Klipper firmware does not need to be upgraded often on the Octopus Pro MCU and LDO Nitehawk-36 toolboard. The only time it was upgraded was when there were deprecation warnings since Klipper is kept up to date.&lt;/p>
-&lt;p>Here are some notes on upgrading the firmware since I did not use the correct settings when building and flashing the firmware which meant I had to perform additional lower level loading of the correct firmware.&lt;/p></description></item><item><title>Building a Hand-wired Cosmos Dactyl Split Keyboard</title><link>https://julianyap.com/posts/2025-11-16-1763340628/</link><pubDate>Sun, 16 Nov 2025 16:50:28 -0800</pubDate><guid>https://julianyap.com/posts/2025-11-16-1763340628/</guid><description>&lt;h2 id="prelude">Prelude&lt;/h2>
-&lt;p>This is my Cosmos Dactyl Split Keyboard. There are many like it, but this one is mine. My keyboard is my best friend. It is my life. I must master it as I must master my life. My keyboard, without me, is useless. Without my keyboard, I am useless.&lt;/p>
-&lt;p>&lt;img src="my_cosmos2.jpg" alt="My Cosmos Keyboard">&lt;/p>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This is a build log of sorts which runs through details of building a hand-wired &lt;a href="https://ryanis.cool/cosmos/">Cosmos Split Keyboard&lt;/a>. I don&amp;rsquo;t go through every detail but try and cover some tips and things of note.&lt;/p></description></item><item><title>Mac OS X - Dock settings</title><link>https://julianyap.com/snippets/2025-04-18-1745013177/</link><pubDate>Fri, 18 Apr 2025 14:52:57 -0700</pubDate><guid>https://julianyap.com/snippets/2025-04-18-1745013177/</guid><description>&lt;p>In newer versions of macOS, the Dock’s auto-hide behavior has become noticeably
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wilderness Downtown</title><link>https://julianyap.com/</link><description>Recent content on Wilderness Downtown</description><generator>Hugo</generator><language>en-us</language><copyright>Julian Yap</copyright><lastBuildDate>Thu, 26 Mar 2026 14:25:00 -0700</lastBuildDate><atom:link href="https://julianyap.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Introducing Pando58 - RP2040 Zero-based Split keyboard</title><link>https://julianyap.com/posts/2026-03-26/</link><pubDate>Thu, 26 Mar 2026 14:25:00 -0700</pubDate><guid>https://julianyap.com/posts/2026-03-26/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/jyap808/pando58"&gt;Pando58&lt;/a&gt; is a modern RP2040 Zero-based 58-key column staggered split keyboard. The PCB supports hotswap sockets OR soldered switches. The interconnect uses RJ45 ports as opposed to TRRS, which improves reliability and allows for hotplugging.&lt;/p&gt;
+&lt;p&gt;Pando58 is designed to be &lt;strong&gt;simple to build&lt;/strong&gt; and &lt;strong&gt;robust in daily use&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Layout:&lt;/strong&gt; Split, column staggered, ergonomic, 58 keys total&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Split connection:&lt;/strong&gt; RJ45&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MCU:&lt;/strong&gt; 2x RP2040 Zero (one per half)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Firmware:&lt;/strong&gt; Vial&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pando58 is intended to avoid unnecessary complexity and common failure points found in many split keyboards. It eschews features such as wireless connectivity, LEDs, encoders, and OLED displays.&lt;/p&gt;</description></item><item><title>Klipper - Upgrade firmware on Octopus Pro MCU and LDO Nitehawk-36 toolboard</title><link>https://julianyap.com/snippets/2026-02-25-1772062509/</link><pubDate>Wed, 25 Feb 2026 15:35:09 -0800</pubDate><guid>https://julianyap.com/snippets/2026-02-25-1772062509/</guid><description>&lt;p&gt;The Klipper firmware does not need to be upgraded often on the Octopus Pro MCU and LDO Nitehawk-36 toolboard. The only time it was upgraded was when there were deprecation warnings since Klipper is kept up to date.&lt;/p&gt;
+&lt;p&gt;Here are some notes on upgrading the firmware since I did not use the correct settings when building and flashing the firmware which meant I had to perform additional lower level loading of the correct firmware.&lt;/p&gt;</description></item><item><title>Building a Hand-wired Cosmos Dactyl Split Keyboard</title><link>https://julianyap.com/posts/2025-11-16-1763340628/</link><pubDate>Sun, 16 Nov 2025 16:50:28 -0800</pubDate><guid>https://julianyap.com/posts/2025-11-16-1763340628/</guid><description>&lt;h2 id="prelude"&gt;Prelude&lt;/h2&gt;
+&lt;p&gt;This is my Cosmos Dactyl Split Keyboard. There are many like it, but this one is mine. My keyboard is my best friend. It is my life. I must master it as I must master my life. My keyboard, without me, is useless. Without my keyboard, I am useless.&lt;/p&gt;
+&lt;p&gt;&lt;img src="my_cosmos2.jpg" alt="My Cosmos Keyboard"&gt;&lt;/p&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is a build log of sorts which runs through details of building a hand-wired &lt;a href="https://ryanis.cool/cosmos/"&gt;Cosmos Split Keyboard&lt;/a&gt;. I don&amp;rsquo;t go through every detail but try and cover some tips and things of note.&lt;/p&gt;</description></item><item><title>Mac OS X - Dock settings</title><link>https://julianyap.com/snippets/2025-04-18-1745013177/</link><pubDate>Fri, 18 Apr 2025 14:52:57 -0700</pubDate><guid>https://julianyap.com/snippets/2025-04-18-1745013177/</guid><description>&lt;p&gt;In newer versions of macOS, the Dock’s auto-hide behavior has become noticeably
 sluggish. Fortunately, you can speed things up using a couple of hidden settings
-via the command line.&lt;/p>
-&lt;h2 id="speed-up-dock-animation">Speed up Dock animation&lt;/h2>
-&lt;p>This removes the animation delay when the Dock appears or disappears:&lt;/p>
-&lt;pre tabindex="0">&lt;code>defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
-&lt;/code>&lt;/pre>&lt;h2 id="remove-the-delay-before-the-dock-appears">Remove the delay before the Dock appears&lt;/h2>
-&lt;p>This makes the Dock show instantly when you hover near the edge:&lt;/p></description></item><item><title>Tools update for 2025</title><link>https://julianyap.com/posts/2025-01-26-1737938277/</link><pubDate>Sun, 26 Jan 2025 16:37:57 -0800</pubDate><guid>https://julianyap.com/posts/2025-01-26-1737938277/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Recently I bought a &lt;a href="https://julianyap.com/pages/2024-10-31-1730430246/">Lenovo ThinkPad T14 Gen 4 (Intel)&lt;/a>. Originally I installed Arch Linux on it but a Reddit comment along the lines of &amp;ldquo;NixOS is the new Arch&amp;rdquo; had me exploring &lt;a href="(#nix-and-nixos)">Nix and NixOS&lt;/a>. Along the way, this has also allowed me to explore some updates to my overall Linux experience and tooling.&lt;/p>
-&lt;p>Through testing out some applications and environments, it often led me to alternative solutions I ended up adopting. As a result, I&amp;rsquo;ve listed the things that didn&amp;rsquo;t work for me first.&lt;/p></description></item><item><title>Accessing Captive Portals on Linux - Getting online with WiFi at Starbucks</title><link>https://julianyap.com/snippets/2024-12-15-1734312801/</link><pubDate>Sun, 15 Dec 2024 17:33:21 -0800</pubDate><guid>https://julianyap.com/snippets/2024-12-15-1734312801/</guid><description>&lt;p>I&amp;rsquo;ve noticed that the captive portal often does not show up with Linux when accessing public WiFi.&lt;/p>
-&lt;p>A captive portal is a web page that pops up when you first access that public WiFi.&lt;/p>
-&lt;p>The workaround is to access a site which just uses HTTP. In the background, operating systems such as Mac OS hit &lt;a href="http://captive.apple.com">http://captive.apple.com&lt;/a>. In my case, I just memorize the URL &lt;a href="http://neverssl.com">neverssl.com&lt;/a>.&lt;/p>
-&lt;p>To manually trigger the captive portal, follow these steps:&lt;/p></description></item><item><title>Arch Linux - Lenovo ThinkPad T14 Gen 4 (Intel)</title><link>https://julianyap.com/pages/2024-10-31-1730430246/</link><pubDate>Thu, 31 Oct 2024 20:04:06 -0700</pubDate><guid>https://julianyap.com/pages/2024-10-31-1730430246/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>I have installed Arch Linux on a Lenovo ThinkPad T14 Gen 4 (Intel) &amp;ldquo;work&amp;rdquo; machine. This page outlines some setup items and other issues.&lt;/p>
-&lt;h2 id="background">Background&lt;/h2>
-&lt;p>I wanted to get a better laptop for Linux after using it on a poorly supported &lt;a href="./2024-04-04-1712257725.md">Surface Book 3&lt;/a>, which was a former work laptop that I obtained for free.&lt;/p>
-&lt;p>The Lenovo ThinkPad T14 Gen 4 (Intel) didn&amp;rsquo;t have a dedicated Arch Linux page when I bought it (I have since &lt;a href="https://wiki.archlinux.org/title/Lenovo_ThinkPad_T14/T14s_(Intel)_Gen_4">created one&lt;/a>), but it does have &lt;a href="https://ubuntu.com/certified/202303-31392">Ubuntu certification&lt;/a>, and other online reports gave me confidence that there wouldn&amp;rsquo;t be any issues.&lt;/p></description></item><item><title>The Degradation of the Cinematic Experience</title><link>https://julianyap.com/posts/2024-06-03-1717462692/</link><pubDate>Mon, 03 Jun 2024 17:58:12 -0700</pubDate><guid>https://julianyap.com/posts/2024-06-03-1717462692/</guid><description>&lt;p>&lt;img src="the-last-emperor-4kuhd-bluray-review-highdef-digtest-2.jpg" alt="The Last Emperor">&lt;/p>
-&lt;p>This isn&amp;rsquo;t one of those rose-colored glasses &amp;ldquo;back in my day&amp;rdquo; feelings but a genuine technical explanation of the degradation of the cinematic experience. We focus on the topic of image resolution and the impact that has.&lt;/p>
-&lt;p>Growing up in the 80&amp;rsquo;s and 90&amp;rsquo;s, some of my fondest memories were of going to the cinema to watch a film for the first time on the &amp;ldquo;big screen&amp;rdquo;. It was often seen as an event, and as a family, we&amp;rsquo;d dress up to go and see &lt;em>The Last Emperor&lt;/em> (is it just me or has this film been criminally buried over the years?) with a drive down to Chadstone Shopping Center to the Hoyts Cinema. I&amp;rsquo;ve only seen the film once, but images from that film were forever etched in my mind.&lt;/p></description></item><item><title>Arch Linux - Surface Book 3</title><link>https://julianyap.com/pages/2024-04-04-1712257725/</link><pubDate>Thu, 04 Apr 2024 12:08:45 -0700</pubDate><guid>https://julianyap.com/pages/2024-04-04-1712257725/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>I have installed Arch Linux on a Microsoft Surface Book 3 to use as my &amp;ldquo;focus&amp;rdquo; machine. This page outlines some set up items and other issues.&lt;/p>
-&lt;p>Most everything &lt;a href="https://github.com/linux-surface/linux-surface/wiki/Supported-Devices-and-Features#surface-books-and-surface-laptop-studio">works out of the box&lt;/a> except the cameras, which I&amp;rsquo;ve disabled in the BIOS.&lt;/p>
-&lt;p>This laptop does not properly support &amp;ldquo;modern &lt;a href="#suspend">suspend&lt;/a>&amp;rdquo; under Linux.&lt;/p>
-&lt;p>This is &lt;em>not&lt;/em> a recommended laptop for running Linux.&lt;/p>
-&lt;nav id="TableOfContents">
- &lt;ul>
- &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#common-issues-and-general-set-up">Common issues and general set up&lt;/a>
- &lt;ul>
- &lt;li>&lt;a href="#blacklisted-modules">Blacklisted modules&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#visual-studio-code-hangs-on-launch">Visual Studio Code hangs on launch&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#toshy---mac-key-bindings">Toshy - Mac key bindings&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#ssh-agent">SSH Agent&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#jetbrains-mono-apple-and-microsoft-fonts">Jetbrains Mono, Apple and Microsoft fonts&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#avahi">Avahi&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#brother-hl-3170cdw-printer">Brother HL-3170CDW printer&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#hibernate">Hibernate&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#nvidia-gpu">Nvidia GPU&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#resume-from-hibernate-has-the-wrong-time">Resume from Hibernate has the wrong time&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#other-packages">Other packages&lt;/a>&lt;/li>
- &lt;/ul>
- &lt;/li>
- &lt;li>&lt;a href="#unresolved-issues">Unresolved issues&lt;/a>
- &lt;ul>
- &lt;li>&lt;a href="#i915-000000020-drm-error-link-training-unsuccessful">i915 0000:00:02.0: [drm] &lt;em>ERROR&lt;/em> Link Training Unsuccessful&lt;/a>&lt;/li>
- &lt;li>&lt;a href="#suspend">Suspend - Only support Suspend to Idle&lt;/a>&lt;/li>
- &lt;/ul>
- &lt;/li>
- &lt;/ul>
-&lt;/nav>
-&lt;h2 id="common-issues-and-general-set-up">Common issues and general set up&lt;/h2>
-&lt;h3 id="blacklisted-modules">Blacklisted modules&lt;/h3>
-&lt;p>I&amp;rsquo;ve had issues with suspending and not resuming on lid closing/opening events. It&amp;rsquo;s a &lt;a href="https://github.com/linux-surface/linux-surface/wiki/Known-Issues-and-FAQ#suspend-aka-sleep-vs-lid-closingopening-events">known issue&lt;/a> so I&amp;rsquo;ve blacklisted &lt;code>surface_gpe&lt;/code> to just turn these events off.&lt;/p></description></item><item><title>Bitcoin ETF flow bot - Methodology</title><link>https://julianyap.com/pages/2024-03-13-1710370430/</link><pubDate>Wed, 13 Mar 2024 15:53:50 -0700</pubDate><guid>https://julianyap.com/pages/2024-03-13-1710370430/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>My Bitcoin ETF flow bot which posts updates at the X account &lt;a href="https://twitter.com/ubiqetfbot">@ubiqetfbot&lt;/a> works by scraping the associated web sites of the ETFs to gather the updated reported Bitcoin holdings in the respective fund/trust.&lt;/p>
-&lt;p>Specific details for each ETF is outlined below (in alphabetical order by Ticker).&lt;/p>
-&lt;h2 id="details">Details&lt;/h2>
-&lt;h3 id="arkb---ark-21shares-bitcoin-etf">ARKB - ARK 21Shares Bitcoin ETF&lt;/h3>
-&lt;p>Data is from their &lt;a href="https://ark-funds.com/funds/arkb/">fund web site&lt;/a>.&lt;/p>
-&lt;p>Historically, the holdings are updated 10+ hours after the close of trading.&lt;/p></description></item><item><title>Tweeting images with Golang</title><link>https://julianyap.com/posts/2024-03-13-1710365831/</link><pubDate>Wed, 13 Mar 2024 14:37:11 -0700</pubDate><guid>https://julianyap.com/posts/2024-03-13-1710365831/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>X (the website formerly known as Twitter) has gone through certain &amp;ldquo;changes&amp;rdquo; in recent years. At some point they introduced the v2 API but the functionality isn&amp;rsquo;t complete.&lt;/p>
-&lt;p>The v1 API needs to be used for uploading media and getting the resulting media ID. We then need to use the v2 API to reference the uploaded media ID to finalize the post.&lt;/p>
-&lt;h2 id="media-upload">Media upload&lt;/h2>
-&lt;p>For the v1 API media upload I utilize this library:
-&lt;a href="https://github.com/drswork/go-twitter/">github.com/drswork/go-twitter/&lt;/a>&lt;/p></description></item><item><title>Litecoin (LTC) - MimbleWimble transactions using Regtest network</title><link>https://julianyap.com/posts/2022-07-24-1658648241/</link><pubDate>Sun, 24 Jul 2022 00:37:22 -0700</pubDate><guid>https://julianyap.com/posts/2022-07-24-1658648241/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Litecoin has implemented MimbleWimble using an Extension Blocks sidechain, commonly referred to as &amp;ldquo;MWEB&amp;rdquo;. I couldn&amp;rsquo;t find any references to using MWEB other than articles which delve more into the technology but not the day to day wallet interaction. This post utilizes the standalone private Regtest network to demonstrate the usage. There are Additional links and references at the bottom of this post if you need an overview of the technology.&lt;/p></description></item><item><title>About</title><link>https://julianyap.com/about/</link><pubDate>Sun, 15 May 2022 22:24:17 -0700</pubDate><guid>https://julianyap.com/about/</guid><description>&lt;p>By design.&lt;/p>
-&lt;p>No analytics.&lt;/p>
-&lt;p>No promises.&lt;/p></description></item><item><title>First post</title><link>https://julianyap.com/posts/2022-05-15-1652658630/</link><pubDate>Sun, 15 May 2022 16:29:25 -0700</pubDate><guid>https://julianyap.com/posts/2022-05-15-1652658630/</guid><description>&lt;p>I&amp;rsquo;ve never liked the static site generator &lt;a href="https://jekyllrb.com">Jekyll&lt;/a> (being Ruby) that comes with built-in support from GitHub. With the advent of GitHub Actions, this has allowed me to set this site up with &lt;a href="https://gohugo.io">Hugo&lt;/a> and an auto-deployment.&lt;/p>
-&lt;p>Definitely not sure what content I want to put up on this site. I&amp;rsquo;ve built it and blown it up a few times.&lt;/p>
-&lt;p>The content creation process has been a long term concern of mine. Namely the whole advertiser-based content platforms we&amp;rsquo;re stuck with. I&amp;rsquo;m also annoyed by the errosion of attention span that these platforms give us.&lt;/p></description></item></channel></rss>
+via the command line.&lt;/p&gt;
+&lt;h2 id="speed-up-dock-animation"&gt;Speed up Dock animation&lt;/h2&gt;
+&lt;p&gt;This removes the animation delay when the Dock appears or disappears:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="remove-the-delay-before-the-dock-appears"&gt;Remove the delay before the Dock appears&lt;/h2&gt;
+&lt;p&gt;This makes the Dock show instantly when you hover near the edge:&lt;/p&gt;</description></item><item><title>Tools update for 2025</title><link>https://julianyap.com/posts/2025-01-26-1737938277/</link><pubDate>Sun, 26 Jan 2025 16:37:57 -0800</pubDate><guid>https://julianyap.com/posts/2025-01-26-1737938277/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Recently I bought a &lt;a href="https://julianyap.com/pages/2024-10-31-1730430246/"&gt;Lenovo ThinkPad T14 Gen 4 (Intel)&lt;/a&gt;. Originally I installed Arch Linux on it but a Reddit comment along the lines of &amp;ldquo;NixOS is the new Arch&amp;rdquo; had me exploring &lt;a href="(#nix-and-nixos)"&gt;Nix and NixOS&lt;/a&gt;. Along the way, this has also allowed me to explore some updates to my overall Linux experience and tooling.&lt;/p&gt;
+&lt;p&gt;Through testing out some applications and environments, it often led me to alternative solutions I ended up adopting. As a result, I&amp;rsquo;ve listed the things that didn&amp;rsquo;t work for me first.&lt;/p&gt;</description></item><item><title>Accessing Captive Portals on Linux - Getting online with WiFi at Starbucks</title><link>https://julianyap.com/snippets/2024-12-15-1734312801/</link><pubDate>Sun, 15 Dec 2024 17:33:21 -0800</pubDate><guid>https://julianyap.com/snippets/2024-12-15-1734312801/</guid><description>&lt;p&gt;I&amp;rsquo;ve noticed that the captive portal often does not show up with Linux when accessing public WiFi.&lt;/p&gt;
+&lt;p&gt;A captive portal is a web page that pops up when you first access that public WiFi.&lt;/p&gt;
+&lt;p&gt;The workaround is to access a site which just uses HTTP. In the background, operating systems such as Mac OS hit &lt;a href="http://captive.apple.com"&gt;http://captive.apple.com&lt;/a&gt;. In my case, I just memorize the URL &lt;a href="http://neverssl.com"&gt;neverssl.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To manually trigger the captive portal, follow these steps:&lt;/p&gt;</description></item><item><title>Arch Linux - Lenovo ThinkPad T14 Gen 4 (Intel)</title><link>https://julianyap.com/pages/2024-10-31-1730430246/</link><pubDate>Thu, 31 Oct 2024 20:04:06 -0700</pubDate><guid>https://julianyap.com/pages/2024-10-31-1730430246/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I have installed Arch Linux on a Lenovo ThinkPad T14 Gen 4 (Intel) &amp;ldquo;work&amp;rdquo; machine. This page outlines some setup items and other issues.&lt;/p&gt;
+&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;I wanted to get a better laptop for Linux after using it on a poorly supported &lt;a href="./2024-04-04-1712257725.md"&gt;Surface Book 3&lt;/a&gt;, which was a former work laptop that I obtained for free.&lt;/p&gt;
+&lt;p&gt;The Lenovo ThinkPad T14 Gen 4 (Intel) didn&amp;rsquo;t have a dedicated Arch Linux page when I bought it (I have since &lt;a href="https://wiki.archlinux.org/title/Lenovo_ThinkPad_T14/T14s_(Intel)_Gen_4"&gt;created one&lt;/a&gt;), but it does have &lt;a href="https://ubuntu.com/certified/202303-31392"&gt;Ubuntu certification&lt;/a&gt;, and other online reports gave me confidence that there wouldn&amp;rsquo;t be any issues.&lt;/p&gt;</description></item><item><title>The Degradation of the Cinematic Experience</title><link>https://julianyap.com/posts/2024-06-03-1717462692/</link><pubDate>Mon, 03 Jun 2024 17:58:12 -0700</pubDate><guid>https://julianyap.com/posts/2024-06-03-1717462692/</guid><description>&lt;p&gt;&lt;img src="the-last-emperor-4kuhd-bluray-review-highdef-digtest-2.jpg" alt="The Last Emperor"&gt;&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t one of those rose-colored glasses &amp;ldquo;back in my day&amp;rdquo; feelings but a genuine technical explanation of the degradation of the cinematic experience. We focus on the topic of image resolution and the impact that has.&lt;/p&gt;
+&lt;p&gt;Growing up in the 80&amp;rsquo;s and 90&amp;rsquo;s, some of my fondest memories were of going to the cinema to watch a film for the first time on the &amp;ldquo;big screen&amp;rdquo;. It was often seen as an event, and as a family, we&amp;rsquo;d dress up to go and see &lt;em&gt;The Last Emperor&lt;/em&gt; (is it just me or has this film been criminally buried over the years?) with a drive down to Chadstone Shopping Center to the Hoyts Cinema. I&amp;rsquo;ve only seen the film once, but images from that film were forever etched in my mind.&lt;/p&gt;</description></item><item><title>Arch Linux - Surface Book 3</title><link>https://julianyap.com/pages/2024-04-04-1712257725/</link><pubDate>Thu, 04 Apr 2024 12:08:45 -0700</pubDate><guid>https://julianyap.com/pages/2024-04-04-1712257725/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I have installed Arch Linux on a Microsoft Surface Book 3 to use as my &amp;ldquo;focus&amp;rdquo; machine. This page outlines some set up items and other issues.&lt;/p&gt;
+&lt;p&gt;Most everything &lt;a href="https://github.com/linux-surface/linux-surface/wiki/Supported-Devices-and-Features#surface-books-and-surface-laptop-studio"&gt;works out of the box&lt;/a&gt; except the cameras, which I&amp;rsquo;ve disabled in the BIOS.&lt;/p&gt;
+&lt;p&gt;This laptop does not properly support &amp;ldquo;modern &lt;a href="#suspend"&gt;suspend&lt;/a&gt;&amp;rdquo; under Linux.&lt;/p&gt;
+&lt;p&gt;This is &lt;em&gt;not&lt;/em&gt; a recommended laptop for running Linux.&lt;/p&gt;
+&lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#common-issues-and-general-set-up"&gt;Common issues and general set up&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#blacklisted-modules"&gt;Blacklisted modules&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#visual-studio-code-hangs-on-launch"&gt;Visual Studio Code hangs on launch&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#toshy---mac-key-bindings"&gt;Toshy - Mac key bindings&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#ssh-agent"&gt;SSH Agent&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#jetbrains-mono-apple-and-microsoft-fonts"&gt;Jetbrains Mono, Apple and Microsoft fonts&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#avahi"&gt;Avahi&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#brother-hl-3170cdw-printer"&gt;Brother HL-3170CDW printer&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#hibernate"&gt;Hibernate&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#nvidia-gpu"&gt;Nvidia GPU&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#resume-from-hibernate-has-the-wrong-time"&gt;Resume from Hibernate has the wrong time&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#other-packages"&gt;Other packages&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#unresolved-issues"&gt;Unresolved issues&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#i915-000000020-drm-error-link-training-unsuccessful"&gt;i915 0000:00:02.0: [drm] &lt;em&gt;ERROR&lt;/em&gt; Link Training Unsuccessful&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#suspend"&gt;Suspend - Only support Suspend to Idle&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id="common-issues-and-general-set-up"&gt;Common issues and general set up&lt;/h2&gt;
+&lt;h3 id="blacklisted-modules"&gt;Blacklisted modules&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve had issues with suspending and not resuming on lid closing/opening events. It&amp;rsquo;s a &lt;a href="https://github.com/linux-surface/linux-surface/wiki/Known-Issues-and-FAQ#suspend-aka-sleep-vs-lid-closingopening-events"&gt;known issue&lt;/a&gt; so I&amp;rsquo;ve blacklisted &lt;code&gt;surface_gpe&lt;/code&gt; to just turn these events off.&lt;/p&gt;</description></item><item><title>Bitcoin ETF flow bot - Methodology</title><link>https://julianyap.com/pages/2024-03-13-1710370430/</link><pubDate>Wed, 13 Mar 2024 15:53:50 -0700</pubDate><guid>https://julianyap.com/pages/2024-03-13-1710370430/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;My Bitcoin ETF flow bot which posts updates at the X account &lt;a href="https://twitter.com/ubiqetfbot"&gt;@ubiqetfbot&lt;/a&gt; works by scraping the associated web sites of the ETFs to gather the updated reported Bitcoin holdings in the respective fund/trust.&lt;/p&gt;
+&lt;p&gt;Specific details for each ETF is outlined below (in alphabetical order by Ticker).&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;h3 id="arkb---ark-21shares-bitcoin-etf"&gt;ARKB - ARK 21Shares Bitcoin ETF&lt;/h3&gt;
+&lt;p&gt;Data is from their &lt;a href="https://ark-funds.com/funds/arkb/"&gt;fund web site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Historically, the holdings are updated 10+ hours after the close of trading.&lt;/p&gt;</description></item><item><title>Tweeting images with Golang</title><link>https://julianyap.com/posts/2024-03-13-1710365831/</link><pubDate>Wed, 13 Mar 2024 14:37:11 -0700</pubDate><guid>https://julianyap.com/posts/2024-03-13-1710365831/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;X (the website formerly known as Twitter) has gone through certain &amp;ldquo;changes&amp;rdquo; in recent years. At some point they introduced the v2 API but the functionality isn&amp;rsquo;t complete.&lt;/p&gt;
+&lt;p&gt;The v1 API needs to be used for uploading media and getting the resulting media ID. We then need to use the v2 API to reference the uploaded media ID to finalize the post.&lt;/p&gt;
+&lt;h2 id="media-upload"&gt;Media upload&lt;/h2&gt;
+&lt;p&gt;For the v1 API media upload I utilize this library:
+&lt;a href="https://github.com/drswork/go-twitter/"&gt;github.com/drswork/go-twitter/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Litecoin (LTC) - MimbleWimble transactions using Regtest network</title><link>https://julianyap.com/posts/2022-07-24-1658648241/</link><pubDate>Sun, 24 Jul 2022 00:37:22 -0700</pubDate><guid>https://julianyap.com/posts/2022-07-24-1658648241/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Litecoin has implemented MimbleWimble using an Extension Blocks sidechain, commonly referred to as &amp;ldquo;MWEB&amp;rdquo;. I couldn&amp;rsquo;t find any references to using MWEB other than articles which delve more into the technology but not the day to day wallet interaction. This post utilizes the standalone private Regtest network to demonstrate the usage. There are Additional links and references at the bottom of this post if you need an overview of the technology.&lt;/p&gt;</description></item><item><title>About</title><link>https://julianyap.com/about/</link><pubDate>Sun, 15 May 2022 22:24:17 -0700</pubDate><guid>https://julianyap.com/about/</guid><description>&lt;p&gt;By design.&lt;/p&gt;
+&lt;p&gt;No analytics.&lt;/p&gt;
+&lt;p&gt;No promises.&lt;/p&gt;</description></item><item><title>First post</title><link>https://julianyap.com/posts/2022-05-15-1652658630/</link><pubDate>Sun, 15 May 2022 16:29:25 -0700</pubDate><guid>https://julianyap.com/posts/2022-05-15-1652658630/</guid><description>&lt;p&gt;I&amp;rsquo;ve never liked the static site generator &lt;a href="https://jekyllrb.com"&gt;Jekyll&lt;/a&gt; (being Ruby) that comes with built-in support from GitHub. With the advent of GitHub Actions, this has allowed me to set this site up with &lt;a href="https://gohugo.io"&gt;Hugo&lt;/a&gt; and an auto-deployment.&lt;/p&gt;
+&lt;p&gt;Definitely not sure what content I want to put up on this site. I&amp;rsquo;ve built it and blown it up a few times.&lt;/p&gt;
+&lt;p&gt;The content creation process has been a long term concern of mine. Namely the whole advertiser-based content platforms we&amp;rsquo;re stuck with. I&amp;rsquo;m also annoyed by the errosion of attention span that these platforms give us.&lt;/p&gt;</description></item></channel></rss>
