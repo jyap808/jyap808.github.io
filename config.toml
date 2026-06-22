@@ -8,8 +8,6 @@ pagination.pagerSize=5 # articles per page
 [params]
 useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 dateFmt = "2006-01-02 3:04PM"
-# Smol theme
-mode="dark"
 # Cactus theme
 tagsOverview = false
 colortheme="dark"
