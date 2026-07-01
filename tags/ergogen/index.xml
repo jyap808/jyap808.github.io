@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ergogen on Wilderness Downtown</title><link>https://julianyap.com/tags/ergogen/</link><description>Recent content in Ergogen on Wilderness Downtown</description><generator>Hugo</generator><language>en-us</language><copyright>Julian Yap</copyright><lastBuildDate>Tue, 30 Jun 2026 15:39:14 -0700</lastBuildDate><atom:link href="https://julianyap.com/tags/ergogen/index.xml" rel="self" type="application/rss+xml"/><item><title>Pando Keyboard: A Progress Report</title><link>https://julianyap.com/posts/2026-06-30/</link><pubDate>Tue, 30 Jun 2026 15:39:14 -0700</pubDate><guid>https://julianyap.com/posts/2026-06-30/</guid><description>&lt;p&gt;This is a progress report on my new Pando keyboard - a split keyboard that keeps the same key layout as the &lt;a href="https://github.com/jyap808/pando58"&gt;Pando58&lt;/a&gt;, but with a completely redesigned PCB and electronics.&lt;/p&gt;
+&lt;figure&gt;&lt;img src="https://julianyap.com/posts/2026-06-30/IMG_2735.jpg"
+			alt="Pando keyboard left, Pando58 right"&gt;&lt;figcaption&gt;
+			&lt;p&gt;Pando prototype keyboard on the left and the previous Pando58 on the right.&lt;/p&gt;
+		&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;blockquote style="border-left: 4px solid #2bbc8a; background: #26282b; padding: 12px 16px; margin: 16px 0; border-radius: 4px;"&gt;
+ &lt;figure&gt;&lt;img src="https://julianyap.com/posts/2026-06-30/pcbway_logo.png"
+ 			alt="PCBWay logo" width="200"&gt;
+ &lt;/figure&gt;
+
+ Part of the development of this project was sponsored by &lt;a href="https://www.pcbway.com/"&gt;PCBWay&lt;/a&gt;, who provided a batch of prototype PCBs and a stencil. Their support helped make this build possible.
+&lt;p&gt;Ordering through PCBWay was straightforward. The online DFM check caught no issues with my design, and pricing was clear upfront.&lt;/p&gt;</description></item></channel></rss>
