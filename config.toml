@@ -6,6 +6,7 @@ copyright = "Julian Yap"
 pagination.pagerSize=10 # articles per page
 
 [params]
+author = "Julian Yap"
 useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 dateFmt = "2006-01-02 3:04PM"
 # Cactus theme
