@@ -238,3 +238,11 @@ I will need to test out the voltage pulled across when I create my next (and hop
 ## Files
 
 Source code and PCB files will be published on GitHub under the Open Hardware [CERN-OHL-S v2](https://ohwr.org/cern_ohl_s_v2.txt) license.
+
+## UPDATE September 7, 2026
+
+Pando is now live on GitHub: https://github.com/jyap808/pando
+
+Pick up Pando fully assembled from my Etsy store: https://www.etsy.com/listing/4567044197/
+
+On the technical side, I eventually redesigned for the STM32G0B1KBT6 MCU.
